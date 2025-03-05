@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Freelancers</title>
+    <link rel="stylesheet" href="Freelancers.css">
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="Project_information.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">
+                    <img src="assets/logo.png" alt="Logo">
+                </a>
+            </div>
+            <div class="navlinks">
+                <ul id="navs">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="#">Browse Projects</a></li>
+                    <li><a href="#">Freelancers</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+                <div class="postproject">
+                    <a href="#">Hire a Freelancer</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="freelancers-container">
+            <!-- Filtering Section -->
+            <div class="freelancer-filter">
+                <h2>Filters</h2>
+
+                <!-- Searchable Skill Filter -->
+                <div class="filter-section">
+                    <h3>Filter by Skills</h3>
+                    <input type="text" id="skill-search" placeholder="Search skills...">
+                    <ul id="skill-list"></ul>
+                    <div id="selected-skills"></div>
+                </div>
+
+                <!-- Apply Filter Button -->
+                <button id="apply-filters">Apply Filters</button>
+                <p>You can remove a skill by clicking on it.</p>
+            </div>
+
+            <!-- Freelancer Section -->
+            <div class="freelancer-content">
+                <!-- Search Bar -->
+                <div class="search-bar">
+                    <input type="text" id="freelancer-search" placeholder="Search for freelancers...">
+                </div>
+
+                <!-- Freelancer List -->
+                <div class="freelancer-list">
+                    <div class="freelancer-card">
+                        <h2>John Doe</h2>
+                        <p><strong>Expertise:</strong> HTML, CSS, JavaScript</p>
+                        <p class="hourly-rate"><strong>Hourly Rate:</strong> $30/hr</p>
+                    </div>
+
+                    <div class="freelancer-card">
+                        <h2>Jane Smith</h2>
+                        <p><strong>Expertise:</strong> Python, AI/ML</p>
+                        <p class="hourly-rate"><strong>Hourly Rate:</strong> $50/hr</p>
+                    </div>
+
+                    <div class="freelancer-card">
+                        <h2>Michael Brown</h2>
+                        <p><strong>Expertise:</strong> JavaScript, React, Node.js</p>
+                        <p class="hourly-rate"><strong>Hourly Rate:</strong> $40/hr</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script type="module" src="Freelancers.js"></script>
+</body>
+</html>

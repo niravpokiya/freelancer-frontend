@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browse Projects</title>
+    <link rel="stylesheet" href="Browse_Projects.css" />
+    <link rel="stylesheet" href="Home.css" />
+    <link rel="stylesheet" href="Project_information.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="#">
+            <img src="assets/logo.png" alt="Logo" />
+          </a>
+        </div>
+        <div class="navlinks">
+          <ul id="navs">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="#">Browse Projects</a></li>
+            <li><a href="#">Freelancers</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+          <div class="postproject">
+            <a href="#">Hire a Freelancer</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-container">
+        <!-- Filtering Section -->
+        <div class="project-filter">
+          <h2>Filters</h2>
+
+          <!-- Searchable Skill Filter -->
+          <div class="filter-section">
+            <h3>Filter by Skills</h3>
+            <input
+              type="text"
+              id="skill-search"
+              placeholder="Search skills..."
+            />
+            <ul id="skill-list"></ul>
+            <div id="selected-skills"></div>
+          </div>
+
+          <!-- Apply Filter Button -->
+          <button id="apply-filters">Apply Filters</button>
+          <p>you can remove skill by clicking on that.</p>
+        </div>
+
+        <!-- Project Section -->
+        <div class="project-content">
+          <!-- Search Bar -->
+          <div class="search-bar">
+            <input
+              type="text"
+              id="project-search"
+              placeholder="Search for projects..."
+            />
+            <!-- <button>Search</button>     -->
+          </div>
+
+          <!-- Project List -->
+          <div class="project-list">
+            <a href="#" class="project-card">
+              <h2>Website Development</h2>
+              <p><strong>Budget:</strong> $1000 - $1500</p>
+              <p class="skills">
+                <strong>Skills:</strong> HTML, CSS, JavaScript
+              </p>
+            </a>
+
+            <a href="#" class="project-card">
+              <h2>AI Chatbot with Python</h2>
+              <p><strong>Budget:</strong> $800 - $1200</p>
+              <p class="skills"><strong>Skills:</strong> Python, AI/ML</p>
+            </a>
+
+            <a href="#" class="project-card">
+              <h2>E-commerce Website</h2>
+              <p><strong>Budget:</strong> $2000 - $3000</p>
+              <p class="skills">
+                <strong>Skills:</strong> JavaScript, React, Node.js
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="browse_projects.js"></script>
+    <script src="skills.js"></script>
+  </body>
+</html>
